@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height:250vh;
+    width: 100vw;
+    background-image: linear-gradient(to right,rgb(75, 75, 251),rgb(166, 166, 243));
+}
+.container .header{
+    display: flex;
+    height: 8vh;
+    width: 100vw;
+    align-items: center;
+    background-color: white;
+}
+.container .header .name{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 60vw;
+    padding-left: 150px;
+}
+.container .header .list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 40vw;
+    padding-right: 100px;
+}
+.container .header h4{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    border-radius: 10px;
+    color: grey;
+}
+.container .header h4 a{
+    text-decoration: none;
+    color: #808080;
+}
+.container .header h4:hover{
+    background-color: gainsboro;
+}
+.container .about{
+    display: flex;
+    height: 50vh;
+    width: 100vw;
+}
+.container .about .profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 30vw;
+}
+.container .about .profile img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+.container .about .description{
+    display: flex;
+    height: 100%;
+    width: 70vw;
+    align-items: center;
+    justify-content: center;
+    padding-right: 100px;
+}
+.container .about .description span{
+    font-size: 15px;
+}
+.container .skills{
+    display: flex;
+    height: 50vh;
+    width: 100vw;
+    align-items: center;
+}
+.container .skills .head1{
+    display: flex;
+    height: 80%;
+    width: 5vw;
+    align-items: center;
+    justify-content: center;
+    background-image:linear-gradient(to right,rgb(166, 166, 238),rgb(88, 88, 243)) ;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.container .skills .head1 span{
+    transform: rotate(270deg);
+    font-size: 40px;
+}
+.container .skills .skill-list{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100vw;
+}
+.container .skills .skill-list ul{
+    padding: 22px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    transition: width ease-in-out 0.4s;
+    height: 80%;
+    width: 5vw;
+    background-image:linear-gradient(to right,rgb(166, 166, 238),rgb(61, 139, 249)) ;
+    gap: 20px;
+    border-radius: 20px;
+}
+.container .skills .skill-list ul:hover{
+    width: 65vw;
+    background-color: rgb(124, 170, 234);
+}
+.container .skills .skill-list ul li{
+    display: flex;
+    align-items: center;
+    height: 10%;
+    width: 100%;
+    gap: 20px;
+}
+.container .skills .skill-list ul li i{
+    font-size: 35px;
+}
+.container .skills .skill-list ul li span{
+    font-size: 20px;
+}
+.container .skills .skill-list ul li .l{
+    height: 20%;
+    width: 40vw;
+    background-color: whitesmoke;
+}
+.container .skills .skill-list ul li .l1{
+    height: 100%;
+    width: 32vw;
+    background-color: blue;
+}
+.container .skills .skill-list ul li .l2{
+    height: 100%;
+    width: 32vw;
+    background-color: blue;
+}
+.container .skills .skill-list ul li .l3{
+    height: 100%;
+    width: 8vw;
+    background-color: blue;
+}
+.container .skills .skill-list ul li .l4{
+    height: 100%;
+    width: 24vw;
+    background-color: blue;
+}
+.container .skills .skill-list ul li .l5{
+    height: 100%;
+    width: 24vw;
+    background-color: blue;
+}
+.container .skills .skill-list ul li .l6{
+    height: 100%;
+    width: 8vw;
+    background-color: blue;
+}
+.container .skills .coding{
+    height: 100%;
+    width: 47vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .skills .coding img{
+    height: 80%;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.container .projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+    width: 100vw;
+    gap: 20px;
+    padding: 20px;
+    background-image: linear-gradient(to right,rgb(75, 75, 251),rgb(166, 166, 243));
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+.container .projects .p-head{
+    display: flex;
+    height: 5vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+.container .projects .p-head span{
+    font-size: 25px;
+}
+.container .projects .project{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 45vh;
+    width: 13vw;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: relative;
+    transform: width ease-in-out 0.6s;
+    overflow: hidden;
+}
+.container .projects .project:hover{
+    width: 90vw;
+}
+.container .projects .project .p-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 20vw;
+}
+.container .projects .project .p-image img{
+    height: 200px;
+    width: 200px;
+}
+.container .projects .project .details{
+    display: flex;
+    height: 100%;
+    width: 70vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container .projects .project .details .p-title{
+    display: flex;
+    height: 20%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.container .projects .project .details .p-desc{
+    display: flex;
+    height: 80%;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+}
+.container .resume{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    width: 100vw;
+}
+.container .resume button{
+    height: 5vh;
+    width: 10vw;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: bisque;
+}
+.container .footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    width: 100vw;
+    background-color: white;
+}
+.container .footer ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 90%;
+    width: 90%;
+    gap: 10px;
+}
+.container .footer ul li{
+    display: flex;
+    list-style: none;
+    height: 15%;
+    width: 100%;
+    gap: 20px;
+}
+.container .footer ul li a{
+    display: flex;
+    align-items: center;
+    color:black;
+    font-size: 18px;
+    gap: 20px;
+    text-decoration: none;
+}
+.container .footer ul li a i{
+    font-size: 20px;
+}
